@@ -7,15 +7,36 @@
 </head>
 <body>
     <h1>Workshop # HTML-FORM</h1>
+    <p>นี่่คือร้านของฉัน</p>
+    <style>
+       h1{
+        color: rgb(151, 3, 3);
+       }
+       p{
+        color: #58088d;
+       }
+       button{
+        background-color: #58088d;
+        color: white;
+       }
+       body{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #7330a0;
+       }
+     
+    </style>
+
     <form action="">
     <table>
         <tr>
-            <td><label for="first-name"><b>ชื่อ</b></label></td>
-            <td><input type="text" id="first-name" name="first-name" placeholder="กรอกชื่อ"></td>
+            <td><label for="first-name" style="color: red;"><b>ชื่อ</b></label></td>
+            <td><input type="text" id="first-name" name="first-name" placeholder="กรอกชื่อ" style="border: 2px solid red;"></td>
         </tr>
         <tr>
-            <td><label for="last-name"><b>สกุล</b></label></td>
-            <td><input type="text" id="last-name" name="last-name" placeholder="กรอกนามสกุล"></td>
+            <td><label for="last-name" style="color: rgb(32, 2, 61);"><b>สกุล</b></label></td>
+            <td><input type="text" id="last-name" name="last-name" placeholder="กรอกนามสกุล" style="background-color: #58088d;"></td>
         </tr>
         <tr>
             <td><label for="dob"><b>วัน/เดือน/ปีเกิด</b></label></td>
@@ -27,7 +48,7 @@
         </tr>
         <tr>
             <td><label for="height"><b>ส่วนสูง(cm)</b></label></td>
-            <td><input type="number" id="age" name="age" placeholder="กรอกส่วนสูง"></td>
+            <td><input type="number" id="age" name="age" placeholder="กรอกส่วนสูง" style="color: rgb(139, 5, 50);"></td>
         </tr>
         <tr>
             <td><label for="weight"><b>น้ำหนัก(kg)</b></label></td>
@@ -47,7 +68,7 @@
         </tr>
         <tr>
             <td><label for="address"><b>ที่อยู่</b></label></td>
-            <td><textarea id="address" name="address" rows="5" placeholder="กรอกที่อยู่"></textarea></td>
+            <td><textarea id="address" name="address" rows="5" placeholder="กรอกที่อยู่" style="background-color: rgb(100, 6, 6);"></textarea></td>
         </tr>
         <tr>
             <td><label for="color"><b>สีที่ชอบ</b></label></td>
