@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+</head>
+<body>
+    <h1>Workshop # HTML-FORM</h1>
+    <form action="">
+    <table>
+        <tr>
+            <td><label for="first-name"><b>ชื่อ</b></label></td>
+            <td><input type="text" id="first-name" name="first-name" placeholder="กรอกชื่อ"></td>
+        </tr>
+        <tr>
+            <td><label for="last-name"><b>สกุล</b></label></td>
+            <td><input type="text" id="last-name" name="last-name" placeholder="กรอกนามสกุล"></td>
+        </tr>
+        <tr>
+            <td><label for="dob"><b>วัน/เดือน/ปีเกิด</b></label></td>
+            <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        <tr>
+            <td><label for="age"><b>อายุ</b></label></td>
+            <td><input type="number" id="age" name="age" placeholder="กรอกอายุ"></td>
+        </tr>
+        <tr>
+            <td><label for="height"><b>ส่วนสูง(cm)</b></label></td>
+            <td><input type="number" id="age" name="age" placeholder="กรอกส่วนสูง"></td>
+        </tr>
+        <tr>
+            <td><label for="weight"><b>น้ำหนัก(kg)</b></label></td>
+            <td><input type="number" id="age" name="age" placeholder="กรอกน้ำหนัก"></td>
+        </tr>
+        <tr>
+            <td><label><b>เพศ</b></label></td>
+            <td>
+                <label> <input type="radio" name="gender" value="male"> <b>ชาย</b></label>
+                <label style="margin-left: 5px;"> <input type="radio" name="gender" value="female"> <b>หญิง</b></label>
+                
+            </td>
+        </tr>
+        <tr>
+            <td><label for="file"><b>รูป</b></label></td>
+            <td><input type="file" id="file" name="file"></td>
+        </tr>
+        <tr>
+            <td><label for="address"><b>ที่อยู่</b></label></td>
+            <td><textarea id="address" name="address" rows="5" placeholder="กรอกที่อยู่"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="color"><b>สีที่ชอบ</b></label></td>
+            <td> <select id="color" name="color">
+                <option value="red">สีแดง</option>
+                <option value="blue">สีน้ำเงิน</option>
+                <option value="green">สีเขียว</option>
+                <option value="yellow">สีเหลือง</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label><b>แนวเพลงที่ชอบ</b></label></td>
+            <td>
+                <label><input type="checkbox" name="music" value="life"><b>เพื่อชีวิต</b></label>
+                <label><input type="checkbox" name="music" value="lukthung"><b>ลูกทุ่ง</b></label>
+                <label><input type="checkbox" name="music" value="pop"><b>ป็อป</b></label> 
+                <label><input type="checkbox" name="music" value="rock"><b>ร็อค</b></label> 
+                <label><input type="checkbox" name="music" value="other"><b>อื่นๆ</b></label> 
+            </td>
+        </tr>
+        <tr>
+            <td><label><b>กีฬาที่ชอบ</b></label></td>
+            <td>
+                <label><input type="checkbox" name="sport" value="football"><b>ฟุตบอล</b></label>
+                <label><input type="checkbox" name="sport" value="volleyball"><b>วอลเลย์บอล</b></label>
+                <label><input type="checkbox" name="sport" value="basketball"><b>บาสเกตบอล</b></label> 
+                <label><input type="checkbox" name="sport" value="batminton"><b>แบตมินตัน</b></label> 
+                <label><input type="checkbox" name="sport" value="other"><b>อื่นๆ</b></label> 
+            </td>
+        </tr>
+    </table>
+    <div>
+        <br><label><input type="checkbox" name="agreement"><b>ยินยอมให้เก็บข้อมูล</b></label><br>
+    </div>
+    <div>
+        <br><br>
+        <button type="reset"><b>Reset</b></button>
+        <label style="margin-left: 100px;"><button type="submit"><b>Submit</b></button>
+    </div>
+
+</form>
+</body>
+</html>
