@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* เลื่อนเนื้อหาให้เริ่มจากด้านบน */
+    background: linear-gradient(135deg, #1d1f50, #472183, #731ba7);
+    color: white;
+    background: url('https://cdn.britannica.com/61/234061-050-6D985ED2/Carina-Nebula-Cosmic-Cliffs-NGC-3324-James-Webb-Space-Telescope-NIRCam.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ff9900, 0 0 20px #ffcc00;
+    margin-top: 20px; /* เพิ่มช่องว่างระหว่างหัวข้อ */
+    
+}
+
+form {
+    width: 100%;
+    max-width: 625px; /* จำกัดขนาดของฟอร์ม */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+table {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ffcc33;
+    box-shadow: 0 0 10px #ff9900;
+}
+form:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+input[type="text"], input[type="date"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* เปลี่ยนสีกรอบ input เมื่อ active */
+input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+    border-color: #ffcc33;
+    box-shadow: 0 0 10px #ffcc33;
+    outline: none;
+}
